@@ -1,14 +1,15 @@
 ---
 layout: default
 ---
-{% include nav.html %}
 
-{% if page.background == "grey" or page.background == "gray" %}
-<script>
-document.getElementById("page-top").className="bg-light";
-</script>
-{% endif %}
+<article class="post">
 
-<div class="container" id="pagecontainer">
-{{ content }}
-</div>
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>
