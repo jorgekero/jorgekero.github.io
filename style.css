@@ -1,0 +1,130 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: sans-serif;
+	color: #5A5A5A
+	
+}
+.banner{
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-color: #eeeeee;
+}
+.navbar{
+	width: 100%;
+	float: left;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #ffffff;
+	border-bottom: 2px solid #d3d3d3;
+}
+.navbar ul {
+	margin-right: 100px;
+}
+
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #5A5A5A;
+	
+}
+
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0%;
+	background: #ffa500;
+	position: absolute;
+	left: 0;
+	bottom: -6px; 
+	transition:0.5s;
+}
+.navbar ul li:hover::after{
+	width: 100%;
+
+}
+.name ul li{
+	margin-left:100px;
+	font-size: 50px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.name ul li a{
+	text-decoration: none;
+	color: #5A5A5A;
+	font-family: 'Courier New', monospace;
+	
+}
+.name ul li::after{
+	content: '';
+	height: 8px;
+	width: 0%;
+	background: #ffa500;
+	position: absolute;
+	left: 0;
+	bottom: -12px; 
+	transition:0.5s;
+}
+.name ul li:hover::after{
+	width: 100%;
+
+}
+
+.content{
+	width:100%;
+	position: absolute;
+	margin-left: 310px; /*same as sidebar width +50px*/
+	top: 30%;
+	text-align: left;
+	color: #5A5A5A;
+}
+
+.content h1{
+	font-size: 50px;
+	margin-top: 10px auto; 
+}
+
+.content h1{
+	margin: 30px auto;
+	font-weight: 100;
+	line-height: 25px;
+}
+/* The sidebar menu */
+.sidenav {
+  /*height: 100%;  Full-height: remove this if you want "auto" height */
+  text-align: left;
+  margin-left:50px;
+  margin-top: 150px;
+  width: 260px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.sidenav li {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.rounded {       /*Class created to crop the image in a circle*/
+  object-fit: cover;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
