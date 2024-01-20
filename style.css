@@ -10,13 +10,14 @@
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
-	background-color: #eeeeee;
+	background-color: #050505;    /*#eeeeee*/
 }
 .navbar{
 	width: 100%;
 	float: left;
 	margin: auto;
 	padding: 35px 0;
+	position: fixed;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -82,27 +83,27 @@
 }
 
 .content{
-	width:100%;
+	width: 79%;
+	height: 60%;
+	background-size: cover;
+	background-position: center;
 	position: absolute;
 	margin-left: 310px; /*same as sidebar width +50px*/
 	top: 30%;
 	text-align: left;
 	color: #5A5A5A;
-}
+	background-color: #eeeeee;
+}*/
 
 .content h1{
 	font-size: 50px;
-	margin-top: 10px auto; 
-}
-
-.content h1{
-	margin: 30px auto;
+	margin: 40px auto;
 	font-weight: 100;
 	line-height: 25px;
 }
 /* The sidebar menu */
 .sidenav {
-  /*height: 100%;  Full-height: remove this if you want "auto" height */
+  height: 100%;  /*Full-height: remove this if you want "auto" height */
   text-align: left;
   margin-left:50px;
   margin-top: 150px;
@@ -111,9 +112,9 @@
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
+  background-color: #eeeeee;
 }
 
 .sidenav li {
