@@ -82,6 +82,10 @@
 
 }
 
+.name p {
+	font-weight: underline;
+}
+
 .content{
 	width: 50%;
 	height: 50%;
